@@ -397,7 +397,7 @@ class LoadImagesAndLabels(Dataset):
             for p in path if isinstance(path, list) else [path]:
                 p = Path(p)  # os-agnostic
                 if p.is_dir():  # dir
-                    f += glob.glob(str(p / '**' / '*.*'), recursive=True)
+                    f += glob.glob(str(p / '**' / '*.*'), recursive=True)# search the images
                     # f = list(p.rglob('*.*'))  # pathlib
                 elif p.is_file():  # file
                     with open(p) as t:
@@ -414,7 +414,7 @@ class LoadImagesAndLabels(Dataset):
             raise Exception(f'{prefix}Error loading data from {path}: {e}\nSee {HELP_URL}')
 
         # Check cache
-        self.label_files = img2label_paths(self.img_files)  # labels
+        self.label_files = img2label_paths(self.img_files)  # labels search the labels
         cache_path = (p if p.is_file() else Path(self.label_files[0]).parent).with_suffix('.cache')
         try:
             cache, exists = np.load(cache_path, allow_pickle=True).item(), True  # load dict

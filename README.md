@@ -45,7 +45,6 @@
 YOLOv5 🚀 is a family of object detection architectures and models pretrained on the COCO dataset, and represents <a href="https://ultralytics.com">Ultralytics</a>
  open-source research into future vision AI methods, incorporating lessons learned and best practices evolved over thousands of hours of research and development.
 </p>
-
 <!--
 <a align="center" href="https://ultralytics.com/yolov5" target="_blank">
 <img width="800" src="https://github.com/ultralytics/yolov5/releases/download/v1.0/banner-api.png"></a>
@@ -146,8 +145,7 @@ python train.py --data coco.yaml --cfg yolov5n.yaml --weights '' --batch-size 12
 <summary>Tutorials</summary>
 
 * [Train Custom Data](https://github.com/ultralytics/yolov5/wiki/Train-Custom-Data)&nbsp; 🚀 RECOMMENDED
-* [Tips for Best Training Results](https://github.com/ultralytics/yolov5/wiki/Tips-for-Best-Training-Results)&nbsp; ☘️
-  RECOMMENDED
+* [Tips for Best Training Results](https://github.com/ultralytics/yolov5/wiki/Tips-for-Best-Training-Results)&nbsp; ☘️RECOMMENDED
 * [Weights & Biases Logging](https://github.com/ultralytics/yolov5/issues/1289)&nbsp; 🌟 NEW
 * [Roboflow for Datasets, Labeling, and Active Learning](https://github.com/ultralytics/yolov5/issues/4975)&nbsp; 🌟 NEW
 * [Multi-GPU Training](https://github.com/ultralytics/yolov5/issues/475)
@@ -159,6 +157,7 @@ python train.py --data coco.yaml --cfg yolov5n.yaml --weights '' --batch-size 12
 * [Hyperparameter Evolution](https://github.com/ultralytics/yolov5/issues/607)
 * [Transfer Learning with Frozen Layers](https://github.com/ultralytics/yolov5/issues/1314)&nbsp; ⭐ NEW
 * [TensorRT Deployment](https://github.com/wang-xinyu/tensorrtx)
+* [Architecture Summary](https://github.com/ultralytics/yolov5/issues/6998) ⭐ NEW
 
 </details>
 

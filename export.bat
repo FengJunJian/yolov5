@@ -1,0 +1,1 @@
+python export.py --weights runs\train\expmM\weights\YOLOMship.pt --include onnx
